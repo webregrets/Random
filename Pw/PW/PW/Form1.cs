@@ -44,5 +44,10 @@ namespace PW
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBox1.Text);
+        }
     }
 }
