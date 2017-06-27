@@ -11,15 +11,18 @@ using System.Windows.Forms;
 namespace PW
 {
     public partial class Form1 : Form
+
     {
+        int n = 0;
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -29,7 +32,17 @@ namespace PW
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "test";
+
+            string[] random = { "Hej", "Glass", "Vafan", "kalles åkbåt" };
+
+            
+            Random rnd = new Random();
+            int x = rnd.Next(0, 4);
+
+            textBox1.Text = random[x];
+
+
+
         }
     }
 }
